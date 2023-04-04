@@ -4,14 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campo Minato DOM</title>
+    <title>Campo Minato Grid</title>
 
+    <!-- css link -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     
+    <main>
+        <!-- top -->
+        <section class="top flex">
+            <div class="left flex">
+                <img src="./assets/img/logo.png" alt="logo">
+                <h1>Campo Minato DOM</h1>
+            </div>
+            <div class="right flex">
+                <div>
+                    <label class="p-r-m" for="difficulty">difficoltà:</label>
+                    <select class="p-r-m" name="difficulty">
+                        <option value="100">f a c i l e</option>
+                        <option value="81">m e d i o</option>
+                        <option value="49">d i f f i c i l e</option>
+                    </select>
+                    <button id="button" class="p-r-m">g i o c a</button>
+                </div>
+            </div>
+        </section>
 
-    
+        <!-- center -->
+        <section id="section" class="flex">
+
+        </section>
+
+        <!-- bottom -->
+        <section class="bottom flex">
+            <span>Made with &hearts; by <a href="#">Boolean</a></span>
+        </section>
+    </main>
+
+    <!-- link java -->
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

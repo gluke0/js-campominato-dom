@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+/* top */
+.top{
+    height: 10vh;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.left{
+    width: 50%;
+    align-items: center;
+}
+
+img{
+    width: 15%;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.right{
+    width: 50%;
+    align-items: center;
+    justify-content: end;
+    margin-right: 1.3rem;
+}
+
+label, select, button{
+    background-color: rgb(223, 252, 240);
+}
+
+select, button{
+    border: none;
+}
+
+select{
+    width: 8rem;
+}
+
+.p-r-m{
+    padding: 4px;
+}
+
+/* center */
+#section{
+    background-color: rgb(160, 252, 214);
+    height: calc(100vh - 15vh);
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    height: 40rem;
+    width: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    border: 0.5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.box-100{
+    width: calc(100% / 10 - 1px);
+}
+
+.box-81{
+    width: calc(100% / 9 - 1px);
+}
+
+.box-49{
+    width: calc(100% / 7 - 1px);
+}
+
+/* bottom */
+.bottom{
+    height: 5vh;
+    padding: 0 2.3rem;
+    align-items: center;
+}
+
+/* effects */
+button:hover, select:hover{
+    cursor: pointer;
+    background-color: rgb(160, 252, 214);
+}
+
+.played{
+    background-color: rgb(77, 141, 245);
+}
