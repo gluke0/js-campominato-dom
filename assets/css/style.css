@@ -59,7 +59,6 @@ select{
 
 /* center */
 #section{
-    background-color: rgb(160, 252, 214);
     height: calc(100vh - 15vh);
     justify-content: center;
     align-items: center;
@@ -73,7 +72,7 @@ select{
 }
 
 .box{
-    border: 0.5px solid black;
+    border: 0.5px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,6 +92,18 @@ select{
     width: calc(100% / 7 - 1px);
 }
 
+.easy{
+    background-color: rgb(160, 252, 214);
+}
+
+.medium{
+    background-color: rgb(226, 219, 83);
+}
+
+.hard{
+    background-color: rgb(178, 48, 48);
+}
+
 /* bottom */
 .bottom{
     height: 5vh;
@@ -108,4 +119,6 @@ button:hover, select:hover{
 
 .played{
     background-color: rgb(77, 141, 245);
+    color: white;
+    font-weight: bolder;
 }

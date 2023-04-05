@@ -22,6 +22,7 @@
         grid.classList.add('grid');
     
         structure.innerHTML = "";
+        structure.classList.remove('easy', 'medium', 'hard');
         structure.append(grid);
     
         for(let i = 1; i <= level; i++){
@@ -29,10 +30,13 @@
             let box = document.createElement('div');
             if(level == 100){
                 box.classList.add('box', 'box-100');
+                structure.classList.add('easy')
             } else if (level == 81){
                 box.classList.add('box', 'box-81');
+                structure.classList.add('medium')
             } else{
                 box.classList.add('box', 'box-49');
+                structure.classList.add('hard')
             }
             box.innerText = i;
     
