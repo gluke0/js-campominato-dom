@@ -17,6 +17,10 @@
     function game(){
         let level = parseInt(difficulty.value);
      
+        let GameOver = false;
+        let score = 0;
+        let bombs = explosions(level);
+        // se voglio vedere bombe aggiungo console.log(bombs)
         
         grid = document.createElement('div');
         grid.classList.add('grid');
@@ -43,8 +47,39 @@
             document.querySelector('.grid').append(box);
     
             box.addEventListener('click', function(){
-                this.classList.toggle('played');
-                console.log(this.innerText)
+                console.log(i);
+                if(!GameOver){
+                    if (!bombs.includes(i)){
+                        this.classList.add('played');
+                        score++;
+                    } else {
+                        this.classList.add('bomb');
+                        this.innerHTML = `<i class="fa-solid fa-bomb"></i>`;
+                        GameOver = true;
+                        score = document.createElement('div2');
+                        document.querySelector('.grid').append(score);
+                        score.classList.add('score');
+                        score.innerHTML = `<h2>GAME OVER</h2>`;
+                    }
+                } else {
+                    structure.innerHTML = '';
+                }
             })
         }
     }
+    // bombe
+    function explosions(howHard){
+        let bombsArray = []
+
+        while( bombsArray.length < 16 ){
+            let bomb = rNum( 1, howHard );
+             if( !bombsArray.includes( bomb )){
+                 bombsArray.push( bomb )
+             }
+        }
+        return bombsArray
+    }
+
+function rNum( min, max ){
+    return Math.floor( Math.random()  * max ) + min
+}

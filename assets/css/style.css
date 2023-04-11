@@ -122,3 +122,20 @@ button:hover, select:hover{
     color: white;
     font-weight: bolder;
 }
+
+.bomb{
+    background-color: rgb(235, 0, 0);
+    color: white;
+}
+
+/* score */
+
+.score{
+    width: 100%;
+    text-align: center;
+}
+
+h2{
+    color: rgb(255, 2, 230);
+    font-size: 5rem;
+}
