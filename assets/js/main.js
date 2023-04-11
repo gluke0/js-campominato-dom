@@ -56,10 +56,10 @@
                         this.classList.add('bomb');
                         this.innerHTML = `<i class="fa-solid fa-bomb"></i>`;
                         GameOver = true;
-                        score = document.createElement('div2');
-                        document.querySelector('.grid').append(score);
-                        score.classList.add('score');
-                        score.innerHTML = `<h2>GAME OVER</h2>`;
+                        scoreBox = document.createElement('div2');
+                        document.querySelector('.grid').append(scoreBox);
+                        scoreBox.classList.add('score');
+                        scoreBox.innerHTML = `<h2> GAME OVER</h2>` + `<h3> IL TUO PUNTEGGIO: ${score}</h3>`
                     }
                 } else {
                     structure.innerHTML = '';
