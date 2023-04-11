@@ -54,7 +54,7 @@
                         score++;
                     } else {
                         this.classList.add('bomb');
-                        this.innerHTML = `<i class="fa-solid fa-bomb"></i>`;
+                        this.innerHTML = '';
                         GameOver = true;
                         scoreBox = document.createElement('div2');
                         document.querySelector('.grid').append(scoreBox);

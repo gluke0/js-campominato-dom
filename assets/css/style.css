@@ -124,12 +124,14 @@ button:hover, select:hover{
 }
 
 .bomb{
-    background-color: rgb(235, 0, 0);
+    background-image: url(../img/explosion\ \(1\).gif);
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
     color: white;
 }
 
 /* score */
-
 .scoreBox{
     width: 100%;
 }
